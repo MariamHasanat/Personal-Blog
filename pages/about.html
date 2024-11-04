@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/about.css">
     <title>Personal Blog</title>
 </head>
-<body>
-    <h2>About me</h2>
-    {% include 'index.html' %}
+
+<body class="about-container">
+    <aside class="aside-about" id="aside-a">
+        <div class="img-class"></div>
+        <span class="job-description">Frontend Web Developer</span>
+        <div>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact-us.html">Contact</a>
+            </nav>
+        </div>
+    </aside>
+    <article class="article-about" id="article-a">
+        <h2>About me</h2>
+        <section>
+            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit deserunt asperiores nihil, magnam,
+                eos corporis sequi</q>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat laudantium est voluptatum accusantium
+                deleniti nisi praesentium repellat enim architecto velit blanditiis perferendis rerum, numquam ipsum
+                illo maxime, voluptas labore aliquam.</p>
+        </section>
+    </article>
 </body>
+
 </html>
