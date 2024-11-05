@@ -99,7 +99,7 @@ body {
 /* Footer Style */
 .footer {
     border: 1px solid brown;
-    border-radius: 3px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
