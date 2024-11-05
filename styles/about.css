@@ -73,6 +73,10 @@ body {
     border: 1px solid blue;
 }
 
+.link-decoration{
+    text-decoration: none;
+}
+
 /* article style */
 .article-about {
     display: flex;
