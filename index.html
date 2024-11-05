@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Personal Blog</title>
+    <style>
+        .img-grid {
+            grid-area: avatar;
+        }
+
+        .text-info {
+            grid-area: info;
+        }
+        .nav-info {
+            grid-area: pg;
+        }
+
+        .home-layout {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 30% 0% 60%;
+            grid-template-rows: 60% 5% 30%;
+            grid-template-areas:
+                "avatar . info"
+                ". . . "
+                "pg pg pg";
+            justify-content: center;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 70%;
+            margin: auto;
+        }
+
+        .mariam-info-style {
+            border: 1px solid slateblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+        }
+        .nav-layout{
+            border: 1px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            height: 70%;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="home-container">
+    <!-- Article Section Hold the Title and the Specified Info for this Page -->
+    <article class="article-about" id="article-a">
+        <h2 class="title">Hello 👋🏻</h2>
+        <section class="home-layout">
+            <img class="avatar img-grid" src="./assets/woman.png" alt="woman Avatar image">
+            <div class="text-info mariam-info-style">
+                <p class="section-text-p1">Hello I&apos;m</p>
+                <h1 class="name">Mariam Hasanat</h1>
+                <p class="section-text-p2">Junior Frontend Developer</p>
+                <p>Lets discover my website</p>
+            </div>
+            <nav class="nav-info nav-layout">
+                <a href="./pages/about.html" class="link-decoration">About</a>
+                <a href="./pages/projects.html" class="link-decoration">Projects</a>
+                <a href="./pages/contact-us.html" class="link-decoration">Contact</a>
+            </nav>
+        </section>
+    </article>
+
+    <!-- Add Footer Section -->
+    <footer id="footer" class="footer">
+        <p>Copyright © 2024 Mariam Hasanat. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>

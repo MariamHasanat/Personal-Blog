@@ -2,3 +2,13 @@
 @import url('./styles/contact-us.css');
 @import url('./styles/projects.css');
 
+.home-container {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-template-rows: 90vh 5vh;
+    grid-template-areas:
+        "ar ar"
+        "ft ft";
+    justify-content: space-evenly;
+    align-items: center;
+}
