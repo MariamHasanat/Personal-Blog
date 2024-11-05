@@ -90,12 +90,6 @@ body {
     padding: 3%;
 }
 
-.paragraph {
-    text-align: justify;
-    text-decoration: none;
-    line-height: 5vh;
-}
-
 /* Footer Style */
 .footer {
     border: 1px solid brown;
@@ -104,4 +98,66 @@ body {
     justify-content: center;
     align-items: center;
     font-size: small;
+}
+
+/* add contact layout and style */
+
+.imgName {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20%;
+    height: 20%;
+    width: 100%;
+}
+
+#iconContact {
+    height: 30px;
+    width: 30px;
+}
+
+.contact-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-form {
+    width: 70%;
+}
+
+.other-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6%;
+    width: 28%;
+    padding: 3%;
+    height: 100%;
+}
+
+.fieldset-style {
+    padding: 3%;
+}
+
+.padding-h4 {
+    padding-top: 5%;
+}
+.form-layout{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+.form-item{
+    padding-bottom: 3%;
 }
