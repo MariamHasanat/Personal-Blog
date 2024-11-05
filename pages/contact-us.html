@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/contact-us.css">
     <title>Personal Blog</title>
+    <style>
+        .imgName {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        #contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20%;
+            height: 20%;
+            width: 100%;
+        }
+
+        #iconContact {
+            height: 30px;
+            width: 30px;
+        }
+
+        .contact-form-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .contact-form {
+            width: 70%;
+        }
+
+        .other-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 6%;
+            width: 28%;
+            padding: 3%;
+            height: 100%;
+        }
+
+        .fieldset-style {
+            padding: 3%;
+        }
+        .padding-h4{
+            padding-top: 5%;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="contact-container">
+    <!-- Aside Section for General Info and Navigation -->
+    <aside class="aside-contact aside-layout" id="aside-a">
+        <figure class="fig-side">
+            <img class="img-avatar" src="../assets/woman.png" alt="woman avatar">
+            <caption class="job-description">Frontend Developer</caption>
+        </figure>
+        <nav class="link-list">
+            <a class="link-decoration" href="../index.html">Home</a>
+            <a class="link-decoration" href="./about.html">About</a>
+            <a class="link-decoration" href="./projects.html">Projects</a>
+            <a class="link-decoration" href="./contact-us.html">Contact</a>
+        </nav>
+
+    </aside>
+
+    <!-- Article Section Hold the Title and the Specified Info for this Page -->
+    <article class="article-contact" id="article-a">
+        <h2 class="title">Contact me</h2>
+
+        <section class="contact-form-container">
+            <!-- Contact Form Section -->
+            <section class="contact-form">
+                <form action="submit">
+                    <fieldset class="fieldset-style">
+                        <legend>Message me</legend>
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name"><br><br>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name"><br><br>
+                        <label for="email-msg">Email Message</label><br><br>
+                        <textarea name="email-msg" id="email-msg" cols="30"
+                            rows="10">type your text message here...</textarea>
+                        <br><br>
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="email-address" id="email-address"><br><br>
+                        <input type="submit" value="Submit"><br><br>
+                    </fieldset>
+                </form>
+            </section>
+
+            <!-- Other Links to Contact Section -->
+            <section class="other-links">
+                <h4 class="padding-h4">Other Links</h4>
+                <nav id="contact">
+                    <a class="link-decoration imgName" href="https://github.com/MariamHasanat" target="_blank"
+                        rel="noopener noreferrer"><img id="iconContact" src="../assets/github-icon.png"
+                            alt="github-icon">&nbsp;&nbsp;GitHub</a>
+                    <a class="link-decoration imgName" href="https://www.linkedin.com/in/mariam-hasanat-80385a1b6"
+                        rel="noopener noreferrer" target="_blank"><img id="iconContact" src="../assets/linkin-icon.png"
+                            alt="linkin-icon">&nbsp;&nbsp;LinkedIn</a>
+                    <a class="link-decoration imgName" href="mailto:hasanattmariam@gmail.com"><img id="iconContact"
+                            src="../assets/gmail.png" alt="gmail">&nbsp;&nbsp;Gmail</a>
+                </nav>
+            </section>
+        </section>
+    </article>
+
+    <!-- Add Footer Section -->
+    <footer id="footer" class="footer">
+        <p>Copyright © 2024 Mariam Hasanat. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>
