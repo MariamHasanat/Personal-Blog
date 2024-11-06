@@ -1,6 +1,6 @@
-@import url('./styles/about.css');
-@import url('./styles/contact-us.css');
-@import url('./styles/projects.css');
+@import url('../static/about.css');
+@import url('../static/projects.css');
+@import url('../static/contact-us.css');
 
 .home-container {
     display: grid;
@@ -63,23 +63,3 @@
     gap: 5%;
     height: 70%;
 }
-
-@media(max-width: 320px) {
-    .projects-container {
-        display: grid;
-        grid-template-columns: 20% 70%;
-        grid-template-rows: 10vh 80vh 5vh;
-        grid-template-areas:
-            "as as"
-            "ar ar"
-            "ft ft";
-        justify-content: space-evenly;
-        align-items: center;
-    }
-}
-
-@media(min-width: 901px) {}
-
-@media(min-width: 600px) {}
-
-@media(max-width: 900px) {}
