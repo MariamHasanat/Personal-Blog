@@ -1,3 +1,5 @@
+
+/* @import url(../style.css); */
 /* layout of page style */
 * {
     padding: 0;
@@ -149,3 +151,6 @@ body {
     border: 1px solid blueviolet;
     padding: 3%;
 }
+
+
+/* Use Media Query */

@@ -6,6 +6,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/projects.css">
     <title>Personal Blog</title>
+    <style>
+        @media(max-width: 320px) {
+
+            /* @import url(../style.css); */
+            /* layout of page style */
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                width: 100%;
+                height: 100%;
+            }
+
+            /* #aside-a {
+                grid-area: as;
+            }
+
+            #article-a {
+                grid-area: ar;
+            }
+
+            #footer {
+                grid-area: ft;
+            }
+
+            .projects-container {
+                display: grid;
+                grid-template-columns: 20% 70%;
+                grid-template-rows: 90vh 5vh;
+                grid-template-areas:
+                    "as ar"
+                    "ft ft";
+                justify-content: space-evenly;
+                align-items: center;
+            } */
+
+            .aside-projects {
+                height: 15vh;
+            }
+
+            .article-projects {
+                border: 1px solid red;
+                border-radius: 10px;
+                height: 80%;
+            }
+
+            /* aside flex layout style */
+
+            .img-avatar {
+                height: 5vh;
+            }
+
+            /* 
+            .fig-side {
+                display: flex;
+                flex-direction: column;
+                height: 30%;
+                align-items: center;
+                gap: 9%;
+            } */
+
+            /* .aside-layout {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            } */
+
+            /* .link-list {
+                height: 40%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 7%;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 10%;
+                border: 1px solid blue;
+            } */
+
+            .link-decoration {
+                text-decoration: none;
+            }
+
+            /* article style */
+            .article-projects {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+
+            .info,
+            .title {
+                padding: 3%;
+            }
+
+            .paragraph {
+                text-align: justify;
+                text-decoration: none;
+                line-height: 3vh;
+            }
+
+            /* Footer Style */
+            .footer {
+                border: 1px solid brown;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: small;
+            }
+
+            /* Style Cards */
+
+            .img-style {
+                height: 38%;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .img {
+                background-image: url('../assets/project1.png');
+            }
+
+            .img2 {
+                background-image: url('../assets/project2.png');
+            }
+
+            .card {
+                border: 1px solid yellowgreen;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 90%;
+                width: 100%;
+            }
+
+            .card-layout {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 6%;
+                height: 100%;
+            }
+
+            .content {
+                border: 1px solid blueviolet;
+                padding: 3%;
+            }
+
+
+            /* Use Media Query */
+
+            .projects-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .aside-layout {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 15%;
+                width: 100%;
+            }
+
+            .link-list {
+                width: 45%;
+                display: flex;
+                flex-direction: row;
+                font-size: 1rem;
+                gap: 1%;
+                align-items: center;
+                margin-top: 0%;
+            }
+
+            .fig-side {
+                display: flex;
+                flex-direction: row;
+                height: 15%;
+                width: 47%;
+                font-size: 0.9rem;
+            }
+
+            .home {
+                content: url('../assets/gmail.png');
+                width: 1.3rem;
+            }
+
+            .about {
+                content: url('../assets/gmail.png');
+                width: 1.3rem;
+            }
+
+            .projects {
+                content: url('../assets/gmail.png');
+                width: 1.3rem;
+            }
+
+            .contact {
+                content: url('../assets/gmail.png');
+                width: 1.3rem;
+            }
+
+            .card-layout {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body class="projects-container">
@@ -16,10 +242,10 @@
             <caption class="job-description">Frontend Developer</caption>
         </figure>
         <nav class="link-list">
-            <a class="link-decoration" href="../index.html">Home</a>
-            <a class="link-decoration" href="./about.html">About</a>
-            <a class="link-decoration" href="./projects.html">Projects</a>
-            <a class="link-decoration" href="./contact-us.html">Contact</a>
+            <a class="link-decoration home" href="../index.html">Home</a>
+            <a class="link-decoration about" href="./about.html">About</a>
+            <a class="link-decoration projects" href="./projects.html">Projects</a>
+            <a class="link-decoration contact" href="./contact-us.html">Contact</a>
         </nav>
 
     </aside>
