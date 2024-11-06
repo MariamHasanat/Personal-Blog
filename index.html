@@ -39,6 +39,13 @@
                 width: 100%;
             }
         }
+
+        .figure-layout{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.6rem;
+        }
     </style>
 </head>
 
@@ -47,7 +54,12 @@
     <article class="article-about" id="article-a">
         <h2 class="title">Hello 👋🏻</h2>
         <section class="home-layout">
-            <img class="avatar img-grid" src="./assets/woman.png" alt="woman Avatar image">
+
+            <figure class="figure-layout">
+                <img class="avatar img-grid" src="./assets/woman.png" alt="woman Avatar image">
+                <figcaption>Woman Avatar</figcaption>
+            </figure>
+
             <div class="text-info mariam-info-style">
                 <p class="section-text-p1">Hello I&apos;m</p>
                 <h1 class="name">Mariam Hasanat</h1>
@@ -62,8 +74,8 @@
         </section>
     </article>
 
-     <!-- Add Footer Section -->
-     <footer id="footer" class="footer">
+    <!-- Add Footer Section -->
+    <footer id="footer" class="footer">
         <p>Copyright © 2024 Mariam Hasanat. All Rights Reserved.</p>
     </footer>
 </body>
