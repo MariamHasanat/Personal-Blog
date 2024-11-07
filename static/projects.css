@@ -1,5 +1,3 @@
-
-/* @import url(../style.css); */
 /* layout of page style */
 * {
     padding: 0;
@@ -166,10 +164,12 @@ body {
         height: 90%;
     }
 
-    .paragraph,p {
+    .paragraph,
+    p {
         font-size: 0.7rem;
         text-align: justify;
     }
+
     .title {
         padding-top: 1rem;
     }
@@ -193,31 +193,18 @@ body {
         content: url('../assets/contact.png');
         width: 1.3rem;
     }
+
     .card {
         height: 90%;
         width: 97%;
     }
 }
 
-
 /* for tablet screens */
 @media screen and (max-width: 1200px) {
 
     .img-avatar {
         height: 5vh;
-    }
-
-    /* fix this in p element 😜😜 line-height: 3vh; */
-    #aside-a {
-        grid-area: as;
-    }
-
-    #article-a {
-        grid-area: ar;
-    }
-
-    #footer-project {
-        grid-area: ft;
     }
 
     .projects-container {
@@ -274,8 +261,9 @@ body {
         gap: 6%;
         height: 100%;
     }
+
     .card {
-        height: 90%; 
+        height: 90%;
         min-width: 40vw;
     }
 }

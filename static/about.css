@@ -107,8 +107,6 @@ body {
 }
 
 /* for mobile screens */
-/* @media (min-device-width: 0px) and (max-device-width: 767px)  */
-
 @media screen and (max-width: 600px) {
     .article-about {
         padding: 2%;
@@ -122,10 +120,12 @@ body {
         height: 90%;
     }
 
-    .paragraph,p {
+    .paragraph,
+    p {
         font-size: 0.7rem;
         text-align: justify;
     }
+
     .title {
         padding-top: 1rem;
     }
@@ -153,25 +153,10 @@ body {
 
 
 /* for tablet screens */
-
-/* @media(min-width: 768px) and (max-width: 992px) */
 @media screen and (max-width: 1200px) {
 
     .img-avatar {
         height: 5vh;
-    }
-
-    /* fix this in p element 😜😜 line-height: 3vh; */
-    #aside-a {
-        grid-area: as;
-    }
-
-    #article-a {
-        grid-area: ar;
-    }
-
-    #footer-about {
-        grid-area: ft;
     }
 
     .about-container {

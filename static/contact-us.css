@@ -73,7 +73,7 @@ body {
     border: 1px solid blue;
 }
 
-.link-decoration{
+.link-decoration {
     text-decoration: none;
 }
 
@@ -153,25 +153,27 @@ body {
 .padding-h4 {
     padding-top: 5%;
 }
-.form-layout{
+
+.form-layout {
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 3%;
 }
-.form-item{
+
+.form-item {
     padding-bottom: 3%;
 }
 
 
 /* using media query */
 
-
 @media screen and (max-width: 600px) {
     .article-contact {
         padding: 2%;
         overflow-y: scroll;
     }
+
     .aside-contact,
     .article-contact,
     .footer {
@@ -203,7 +205,7 @@ body {
         width: 1.3rem;
     }
 
-/* ******************************** */
+    /* ******************************** */
     .contact-form-container {
         display: flex;
         flex-direction: column;
@@ -229,7 +231,9 @@ body {
     .other-links {
         width: 97%;
     }
-    .paragraph, p {
+
+    .paragraph,
+    p {
         font-size: 0.7rem;
         text-align: justify;
     }
@@ -238,25 +242,10 @@ body {
 
 
 /* for tablet screens */
-
-/* @media(min-width: 768px) and (max-width: 992px) */
 @media screen and (max-width: 1200px) {
 
     .img-avatar {
         height: 5vh;
-    }
-
-    /* fix this in p element 😜😜 line-height: 3vh; */
-    #aside-a {
-        grid-area: as;
-    }
-
-    #article-a {
-        grid-area: ar;
-    }
-
-    #footer-contact {
-        grid-area: ft;
     }
 
     .contact-container {
