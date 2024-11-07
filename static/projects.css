@@ -20,7 +20,7 @@ body {
     grid-area: ar;
 }
 
-#footer {
+#footer-project {
     grid-area: ft;
 }
 
@@ -216,7 +216,7 @@ body {
         grid-area: ar;
     }
 
-    #footer {
+    #footer-project {
         grid-area: ft;
     }
 
