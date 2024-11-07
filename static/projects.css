@@ -92,8 +92,6 @@ body {
     padding: 3%;
 }
 
-
-
 .paragraph {
     text-align: justify;
     text-decoration: none;
@@ -155,143 +153,25 @@ body {
 
 
 /* Use Media Query */
-
-@media(max-width: 426px) {
-
-    /* layout of page style */
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        width: 100%;
-        height: 100%;
-    }
-
-    .aside-projects {
-        height: 15vh;
-    }
-
+@media screen and (max-width: 600px) {
     .article-projects {
-        border: 1px solid red;
-        border-radius: 10px;
-        height: 80%;
-        width: 100%;
+        padding: 2%;
+        overflow-y: scroll;
     }
 
-    /* aside flex layout style */
-
-    .img-avatar {
-        height: 5vh;
-    }
-
-    .link-decoration {
-        text-decoration: none;
-    }
-
-    /* article style */
-    .article-projects {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-
-    .info,
-    .title {
-        padding: 3%;
-    }
-
-    .paragraph {
-        text-align: justify;
-        text-decoration: none;
-        line-height: 3vh;
-    }
-
-    /* Footer Style */
+    .aside-projects,
+    .article-projects,
     .footer {
-        border: 1px solid brown;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: small;
-        height: 7vh;
-        width: 100%;
+        margin: 2%;
+        height: 90%;
     }
 
-    /* Style Cards */
-
-    .img-style {
-        height: 38%;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+    .paragraph,p {
+        font-size: 0.7rem;
+        text-align: justify;
     }
-
-    .img {
-        background-image: url('../assets/project1.png');
-    }
-
-    .img2 {
-        background-image: url('../assets/project2.png');
-    }
-
-    .card {
-        border: 1px solid yellowgreen;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 80vh;
-        width: 100%;
-    }
-
-
-    .content {
-        border: 1px solid blueviolet;
-        padding: 3%;
-    }
-
-
-    /* Use Media Query */
-
-    .projects-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .aside-layout {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 15%;
-        width: 100%;
-    }
-
-    .link-list {
-        width: 45%;
-        display: flex;
-        flex-direction: row;
-        font-size: 1rem;
-        gap: 1%;
-        align-items: center;
-        margin-top: 0%;
-    }
-
-    .fig-side {
-        display: flex;
-        flex-direction: row;
-        height: 15%;
-        width: 47%;
-        font-size: 0.9rem;
+    .title {
+        padding-top: 1rem;
     }
 
     .home {
@@ -313,144 +193,50 @@ body {
         content: url('../assets/contact.png');
         width: 1.3rem;
     }
-
-    .card-layout {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        width: 100%;
-        height: 100%;
+    .card {
+        height: 90%;
+        width: 97%;
     }
 }
 
-@media(max-width: 768px) {
 
-    /* layout of page style */
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        width: 100%;
-        height: 100%;
-    }
-
-    .aside-projects {
-        height: 15vh;
-    }
-
-    .article-projects {
-        border: 1px solid red;
-        border-radius: 10px;
-        height: 80%;
-        width: 100%;
-    }
-
-    /* aside flex layout style */
+/* for tablet screens */
+@media screen and (max-width: 1200px) {
 
     .img-avatar {
         height: 5vh;
     }
 
-    .link-decoration {
-        text-decoration: none;
+    /* fix this in p element 😜😜 line-height: 3vh; */
+    #aside-a {
+        grid-area: as;
     }
 
-    /* article style */
-    .article-projects {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
+    #article-a {
+        grid-area: ar;
     }
 
-    .info,
-    .title {
-        padding: 3%;
+    #footer {
+        grid-area: ft;
     }
-
-    .paragraph {
-        text-align: justify;
-        text-decoration: none;
-        line-height: 3vh;
-    }
-
-    /* Footer Style */
-    .footer {
-        border: 1px solid brown;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: small;
-        height: 7vh;
-        width: 100%;
-    }
-
-    /* Style Cards */
-
-    .img-style {
-        height: 38%;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .img {
-        background-image: url('../assets/project1.png');
-    }
-
-    .img2 {
-        background-image: url('../assets/project2.png');
-    }
-
-    .card {
-        border: 1px solid yellowgreen;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 80vh;
-        width: 100%;
-    }
-
-    .card-layout {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        width: 100%;
-        height: 100%;
-    }
-
-    .content {
-        border: 1px solid blueviolet;
-        padding: 3%;
-    }
-
-
-    /* Use Media Query */
 
     .projects-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        line-height: 1em;
+        display: grid;
+        grid-template-columns: 97vw;
+        grid-template-rows: 10vh 78vh 10vh;
+        grid-template-areas:
+            "as"
+            "ar"
+            "ft";
     }
 
+    /* Nav layout inside */
     .aside-layout {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        height: 10vh;
-        width: 100%;
     }
 
     .link-list {
@@ -469,5 +255,27 @@ body {
         height: 15%;
         width: 47%;
         font-size: 0.9rem;
+    }
+
+    /* ****************** */
+
+    .aside-projects,
+    .article-projects,
+    .footer {
+        margin: 5% 3% 0.5% 3%;
+        height: 96%;
+    }
+
+    .card-layout {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 6%;
+        height: 100%;
+    }
+    .card {
+        height: 90%; 
+        min-width: 40vw;
     }
 }
