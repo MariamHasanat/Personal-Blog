@@ -2,6 +2,11 @@
 @import url('../static/projects.css');
 @import url('../static/contact-us.css');
 
+#footer{
+    grid-area: ft;
+}
+
+/* this code depend on some data in imported files -- maybe I am not sure */
 .home-container {
     display: grid;
     grid-template-columns: 20% 70%;
