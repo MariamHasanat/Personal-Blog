@@ -10,11 +10,11 @@ body {
     height: 100%;
 }
 
-#aside-a {
+#aside-c {
     grid-area: as;
 }
 
-#article-a {
+#article-c {
     grid-area: ar;
 }
 

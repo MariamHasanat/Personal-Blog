@@ -6,6 +6,10 @@
     grid-area: ft;
 }
 
+#article-h {
+    grid-area: ar;
+}
+
 /* this code depend on some data in imported files -- maybe I am not sure */
 .home-container {
     display: grid;
