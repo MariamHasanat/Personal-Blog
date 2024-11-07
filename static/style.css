@@ -64,44 +64,86 @@
     height: 70%;
 }
 
-
-/* using media query of home page */
-@media(max-width: 426px) {
-
-    /* Footer Style */
-    .footer {
-        padding: 3%;
-        border: 1px solid brown;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: small;
-        height: 7vh;
-        width: 100%;
-    }
-
-}
-
-@media(max-width: 768px) {
-
-    /* Footer Style */
-    .footer {
-        padding: 3%;
-        border: 1px solid brown;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: small;
-        height: 7vh;
-        width: 100%;
-    }
-}
-
 .figure-layout{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 0.6rem;
 }
+
+/* using media query of home page */
+
+@media screen and (max-width: 600px) {
+    .article-about {
+        padding: 2%;
+        overflow-y: scroll;
+    }
+
+    .aside-about,
+    .article-about,
+    .footer {
+        margin: 2%;
+        height: 90%;
+    }
+
+    .paragraph,p {
+        font-size: 0.7rem;
+        text-align: justify;
+    }
+    .title {
+        padding-top: 1rem;
+    }
+
+    .home {
+        content: url('../assets/home.png');
+        width: 1.3rem;
+    }
+
+    .about {
+        content: url('../assets/about.png');
+        width: 1.3rem;
+    }
+
+    .projects {
+        content: url('../assets/project.png');
+        width: 1.3rem;
+    }
+
+    .contact {
+        content: url('../assets/contact.png');
+        width: 1.3rem;
+    }
+}
+
+
+/* for tablet screens */
+
+/* @media(min-width: 768px) and (max-width: 992px) */
+@media screen and (max-width: 1200px) {
+    .avatar {
+        width: 9rem;
+        margin: auto;
+    }
+
+    .home-layout {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 20% 2% 30% 2% 30%;
+        grid-template-areas:
+            "avatar"
+            "."
+            "info"
+            "."
+            "pg";
+        justify-content: center;
+        align-items: center;
+    }
+    .article-about,
+    .footer {
+        margin: 5% 3% 0.5% 3%;
+        height: 96%;
+    }
+}
+
