@@ -129,8 +129,8 @@
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns: 90%;
-        grid-template-rows: 20% 2% 30% 2% 30%;
+        grid-template-columns: 75vw;
+        grid-template-rows: 35% 2% 30% 2% 30%;
         grid-template-areas:
             "avatar"
             "."
