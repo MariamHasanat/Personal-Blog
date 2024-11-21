@@ -1,5 +1,6 @@
 #### This is the first project of the Udacity Frontend Nanodegree program
 
+##### It is ZERO AI
 `Here are the reviewer notes: `
 
 
